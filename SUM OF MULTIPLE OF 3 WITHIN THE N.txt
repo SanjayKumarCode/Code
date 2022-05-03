@@ -1,0 +1,30 @@
+WAJPT CALCULATE THE SUM OF MULTIPLE OF 3 WITHIN THE N
+      PROGRAM
+                import java.util.Scanner;
+                class Sanjay1{
+	        public static void main(String[]args)
+	        {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter The Number");
+		int n=sc.nextInt();
+		int i=3,sum=0;
+		System.out.print("multiple of 3=");
+		while(i<=n)
+		{
+		if(i%3==0)
+		{
+			sum=sum+i;
+			System.out.print(" ");
+		System.out.print(i);
+		}
+		i++;		
+		}
+		System.out.println(" ");
+		System.out.println("sum of multiple of 3="+sum);
+	     }
+            }
+o/p
+Enter The Number
+45
+multiple of 3= 3 6 9 12 15 18 21 24 27 30 33 36 39 42 45 
+sum of multiple of 3=360
