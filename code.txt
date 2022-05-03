@@ -1,0 +1,36 @@
+WAJPT READ THE THE MONTH NUMBER FROM THE USER AND PRINT CORRESPONDING MONTH NAME AND HOW MANY DAYS IN THAT MANTH .
+PROGRAM SOLUTION >
+  import java.util.Scanner;
+              class Month_days{
+	     public static void main(String[]args){
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter Month ");
+		int a=sc.nextInt();
+		if(a==1)
+		System.out.println("January in 31 days");
+		else if(a==2)
+	      System.out.println("Febuary in 28 or 29 days");
+		else if(a==3)
+		System.out.println("March in 31 days ");
+		else if(a==4)
+		System.out.println("April in  30 days");
+		else if(a==5)
+		System.out.println("May in 31 days");
+		else if(a==6)
+	       System.out.println("june in 30 days");
+		else if(a==7)
+		System.out.println("july in 31 days");
+		else if(a==8)
+		System.out.println("August in 31 days");
+		else if(a==9)
+		System.out.println("Setember in 30 days");
+		else if(a==10)
+		System.out.println("Octuber in 31 days");
+		else if(a==11)
+		System.out.println("Number in 30 days");
+		else if(a==12)
+		System.out.println("December in 31 day");
+		else 
+		System.out.println("Invalid Month And days");
+		}
+		}
