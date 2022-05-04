@@ -1,0 +1,24 @@
+WAJPT CALCULATE THE SUM OF DIGIT IN THE NUMBER
+PROGRAM
+   import java.util.Scanner;
+     public class Sum
+     {
+      public static void main (String []args)
+      {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the digits");
+        int n=sc.nextInt();
+        int sum=0,rem;
+        while(n!=0)
+        {
+            rem=n%10;
+            sum=sum+rem;
+            n=n/10;
+        }
+     System.out.println("sum of the digits="+sum);
+      }
+      }
+O/P
+Enter the digits
+53
+sum of the digits=8
