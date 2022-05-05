@@ -1,0 +1,24 @@
+WAJPT CALCULATE THE PRODUCT OF DIGIT IN THE NUMBER
+SOL
+                        import java.util.Scanner;
+                        class MainRead{
+		        public static void main(String[]args){
+		         Scanner sc=new Scanner(System.in);
+		        System.out.println("Enter The Number");
+		        int n=sc.nextInt();
+		        int r, p=1;
+		        do {
+		             r=n%10;
+		            p=p*r;
+		            n=n/10;
+		        }
+		        while(n!=0);
+		        System.out.println("product of digit in the Number :"+p);
+		      }
+                        
+                     }
+		 
+O/P
+Enter The Number
+6253
+product of digit in the Number :180
