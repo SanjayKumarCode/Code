@@ -1,0 +1,33 @@
+45.3,33.43,54.2,77.4,89.66 print forword Qrder and Backword order
+public class Array {
+public static void main(String[] args) {
+ // TODO Auto-generated method stub
+double []a= {45.3,33.49,54.2,77.4,89.66};
+int i;
+System.out.println("-----Fordword order--------");
+for( i=0;i<=4;i++)
+{
+System.out.println(a[i]);
+}	
+System.out.println("-----Backword order--------");
+for(i=4;i>=0;i--)
+{
+System.out.println(a[i]);
+}
+
+}
+
+}
+OUTPUT =
+-----Fordword order--------
+45.3
+33.49
+54.2
+77.4
+89.66
+-----Backword order--------
+89.66
+77.4
+54.2
+33.49
+45.3
