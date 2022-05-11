@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class Maa{
+    public static void main(String []args){
+        Scanner sc= new Scanner(System.in);
+        System.out.println("Enter The Number");
+        int n=sc.nextInt();
+        int ecount=0;   int ocount=0;
+     
+        for(int i=1;i<=n;i++)
+        {
+            if(i%2==0)
+            ecount++;
+            else
+            ocount++;
+        }
+        System.out.println("print the even Number is "  +ecount);
+             System.out.println("print the odd Number is  "+ocount);
+    }
+}
+
+O/P
+Enter The Number
+45
+print the even Number is 22
+print the odd Number is  23
