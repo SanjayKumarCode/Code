@@ -1,0 +1,22 @@
+     import java.util.Scanner;
+      public class Santosha {
+      public static void main(String []arg){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the Number ");
+        int n=sc.nextInt();
+        int count=0;
+        do{
+         n=n/10;
+         count ++;
+        }
+        while(n!=0);
+        System.out.println("Number Of Digit is  "+count);
+        
+       }
+    
+      }
+
+O/P
+Enter the Number 
+45
+Number Of Digit is  2
