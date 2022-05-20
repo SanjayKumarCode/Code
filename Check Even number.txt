@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class Sanjay{
+    public static void main(String[] args)
+    {
+        System.out.println("Enter The Number");
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+            if(n%2==0)
+             System.out.println("Number is even "+n);
+            else
+                System.out.println("Number is not even "+n);
+    }
+}
