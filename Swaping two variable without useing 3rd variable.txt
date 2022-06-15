@@ -1,0 +1,22 @@
+import java.util.*;
+public class Swap {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter Two Number");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        a=a+b;
+        b=a-b;
+        a=a-b;
+        System.out.println("Swaping First number  "+a);
+        System.out.println("Swaping Second number  "+b);
+    
+    }
+}
+Enter Two Number
+I/P
+15
+95
+O/P
+Swaping First number  95
+Swaping First number  15
