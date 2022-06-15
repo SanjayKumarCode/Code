@@ -1,0 +1,23 @@
+import java.util.*;
+public class SwapingV {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter Two Intiger Value");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c;      
+        c=a;
+        a=b;
+        b=c;     
+        System.out.println("Swaping first Vriable  "+a);
+        System.out.println("Swaping Scond Vriable  "+b);
+
+    }
+}
+Enter Two Intiger Value
+I/P
+25
+36
+O/P
+Swaping first Vriable  36
+Swaping Scond Vriable  25
