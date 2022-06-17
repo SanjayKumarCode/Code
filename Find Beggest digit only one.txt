@@ -1,0 +1,23 @@
+import java.util.*;
+public class BegestDigit {
+    public static void main(String[] args) {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("Enetr The Number ");
+    int n=sc.nextInt();
+    int biggest=isBiggest(n);
+    System.out.println("Biggest digit within "+n+" is:"+biggest);  
+    }
+
+       static int isBiggest(int n){
+      int digit=n%10;
+      n=n/10;
+      while(n>0){
+        int rem=n%10;
+        if(rem>digit)
+        digit=rem;
+        n=n/10;
+      }
+      return digit;
+    }
+}
+
