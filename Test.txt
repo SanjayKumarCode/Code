@@ -1,0 +1,173 @@
+
+
+Answer:- 2
+
+import java.util.*;
+class Test{
+public static void main(String args[])
+throws InputMismatchException{
+
+Scanner sc=new Scanner(System.in);
+int atm;
+
+System.out.print("Enter a five-digit amount : ");
+atm=sc.nextInt();
+
+if(atm>99999){
+System.out.println("INVALID AMOUNT.");}
+else{
+int a[]={1000,500,100,50,20,10,5,2,1};
+int i,p,r,b,t;
+    p=atm;
+ for(i=0;i< a.length;i++){
+   t=atm/a[i];
+if(t!=0){
+System.out.println(a[i]+"X"+t+"="+(t*a[i]));
+atm=atm%a[i];
+}
+}
+
+   String ones[]={"one","two","three","four","five",
+  "six","seven","eight","nine"};
+    r=0;
+ while(p>0){
+  r=r*10+p%10;
+  p/=10;
+  }
+
+while(r>0){
+ b=r%10;
+System.out.print(ones[b-1].toUpperCase()+" ");
+r/=10;
+}
+ }
+}
+}
+
+
+Output
+Enter a five-digit amount : 14856
+1000X14=14000500X1=500
+100X3=300
+50X1=505X1=5
+1X1=1
+ONE FOUR EIGHT FIVE SIX 
+_____________________________________________________________________________________________________________________________________________________________________________________________
+
+_________________________________________________________________________________________________________________________________________________________________________________________
+Answer:-4
+
+
+import java.util.*;
+public class Test {
+public static void main(String args[])
+throws InputMismatchException{
+
+Scanner scan=new Scanner(System.in);
+System.out.println("Enter your date od birth in dd mm yyyy format : ");
+
+int d=scan.nextInt();
+int m=scan.nextInt();
+int y=scan.nextInt();
+int dom[]={31,28,31,30,31,30,31,31,30,31,30,31};
+if(y%400==0 || (y%100!=0 && y%4==0))
+dom[1]=29;
+if(d<=dom[m-1])
+{
+System.out.print("VALID DATE");
+int i,s=0;
+for(i=0;i< m-1;i++)
+s=s+dom[i];
+
+s+=d;
+
+System.out.print(s);
+}
+else
+{
+System.out.print("INVALID DATE");
+}
+}
+}
+
+Output-
+Enter your date od birth in dd mm yyyy format : 
+34
+06
+2010
+INVALID DATE
+
+___________________________________________________________________________________________________________________________________________________________________________________
+Answer 5
+import java.util.Scanner;
+
+public class Test
+{
+    public static void main(String args[]) {
+        Scanner in = new Scanner(System.in);
+        System.out.print("Enter number: ");
+        int n = in.nextInt();
+
+        if (n <= 0) {
+            System.out.println(n + " is not a Smith Number.");
+            return;
+        }
+
+        boolean isComposite = false;
+        for (int i = 2; i < n; i++) {
+            if (n % i == 0) {
+                isComposite = true;
+                break;
+            }
+        }
+
+        if (isComposite && n != 1) {
+            int sumDigits = 0;
+            int t = n;
+            while (t != 0) {
+                int d = t % 10;
+                sumDigits += d;
+                t /= 10;
+            }
+
+            int sumPrimeDigits = 0;
+            t = n;
+            for(int i = 2; i < t; i++) {
+                while(t % i == 0) {
+                    t /= i;
+                    int temp = i;
+                    while (temp != 0) {
+                        int d = temp % 10;
+                        sumPrimeDigits += d;
+                        temp /= 10;
+                    }
+                }
+            }
+            
+            if(t > 2) 
+            {
+                while (t != 0) {
+                    int d = t % 10;
+                    sumPrimeDigits += d;
+                    t /= 10;
+                }
+            }
+
+            if (sumPrimeDigits == sumDigits)
+                System.out.println(n + " is a Smith Number ");
+            else
+                System.out.println(n + " is not a Smith Number ");
+        }
+        
+        else
+        {
+            System.out.println(n + " is not a Smith Number ");
+        }
+    }
+}
+
+
+Output-
+
+Enter number: 666
+666 is a Smith Number 
